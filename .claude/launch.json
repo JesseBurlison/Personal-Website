@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "personal-website",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "C:\\Users\\snowf\\Documents\\GitHub\\Personal-Website",
+      "port": 5173,
+      "autoPort": true
+    }
+  ]
+}
