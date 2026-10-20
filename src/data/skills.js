@@ -4,7 +4,7 @@ const skillGroups = [
     title: 'AI & Machine Learning',
     icon: 'bi-cpu-fill',
     description: 'Building intelligent, production-ready AI systems and pipelines.',
-    skills: ['AWS Bedrock', 'Claude / Anthropic', 'LangChain', 'Agent Strands', 'TensorFlow', 'OpenCV', 'RAG Pipelines'],
+    skills: ['AWS Bedrock', 'Claude / Anthropic', 'LangChain', 'Agent Strands', 'TensorFlow', 'OpenCV'],
   },
   {
     id: 2,

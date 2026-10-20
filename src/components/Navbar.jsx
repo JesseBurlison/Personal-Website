@@ -26,6 +26,7 @@ function Navbar() {
               { to: '/', label: 'Home' },
               { to: '/about', label: 'About' },
               { to: '/projects', label: 'Projects' },
+              { to: '/games', label: 'Games' },
               { to: '/contact', label: 'Contact' },
             ].map(({ to, label }) => (
               <li className="nav-item" key={to}>
@@ -39,16 +40,6 @@ function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <li className="nav-item">
-              <a
-                href="https://www.linkedin.com/in/jesseburlison/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-sm px-3 ms-lg-2"
-              >
-                Connect on LinkedIn
-              </a>
-            </li>
           </ul>
         </div>
       </div>

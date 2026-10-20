@@ -9,7 +9,7 @@ const experience = [
     period: 'May 2021 – Present',
     bullets: [
       'Help derive circle-wide strategies for developing technologies such as Amazon Bedrock',
-      'Conducted training events on AWS Strands, agent teams, and the creation of RAGs and their pipelines',
+      'Conducted training events on AWS Strands and the creation of agent teams',
       'Provided mentorship to new hires and LDP employees on emerging AI technologies',
       'Designed, developed, deployed, and maintained AI-powered workflows for the Bond and Specialty line of business',
       'Collaborates with stakeholders across teams to translate business needs into scalable AI-powered software solutions',

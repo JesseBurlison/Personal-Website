@@ -22,6 +22,7 @@ function Footer() {
                 { to: '/', label: 'Home' },
                 { to: '/about', label: 'About' },
                 { to: '/projects', label: 'Projects' },
+                { to: '/games', label: 'Games' },
                 { to: '/contact', label: 'Contact' },
               ].map(({ to, label }) => (
                 <li key={to} className="mb-1">

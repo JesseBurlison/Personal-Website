@@ -41,7 +41,7 @@ function Home() {
           <div className="row g-4 mt-5">
             {[
               { icon: 'bi-geo-alt-fill', label: 'Cheshire, CT' },
-              { icon: 'bi-briefcase-fill', label: '6+ Years Experience' },
+              { icon: 'bi-briefcase-fill', label: '7+ Years Experience' },
               { icon: 'bi-mortarboard-fill', label: 'M.S. Software Engineering' },
               { icon: 'bi-award-fill', label: 'AWS Certified' },
             ].map(({ icon, label }) => (
@@ -103,7 +103,7 @@ function Home() {
                 Bedrock and agent frameworks, and ship AI-powered workflows that solve real business problems.
               </p>
               {[
-                { icon: 'bi-robot', title: 'AI & Agents', text: 'Building multi-agent systems, RAG pipelines, and LLM-powered automation with AWS Bedrock and LangChain.' },
+                { icon: 'bi-robot', title: 'AI & Agents', text: 'Building multi-agent systems and LLM-powered automation with AWS Bedrock and LangChain.' },
                 { icon: 'bi-cloud-fill', title: 'Cloud Native', text: 'AWS-certified with hands-on experience deploying containerized workloads and CI/CD pipelines.' },
                 { icon: 'bi-people-fill', title: 'Mentor & Leader', text: 'Training new hires and LDP employees on emerging AI technologies and engineering best practices.' },
                 { icon: 'bi-mortarboard-fill', title: 'Lifelong Learner', text: 'M.S. in Software Engineering from CCSU, with a focus on machine vision and robotics.' },
@@ -122,7 +122,7 @@ function Home() {
             <div className="col-lg-6">
               <div className="row g-3 text-center">
                 {[
-                  { stat: '6+', label: 'Years of Experience' },
+                  { stat: '7+', label: 'Years of Experience' },
                   { stat: 'M.S.', label: 'Software Engineering' },
                   { stat: 'AWS', label: 'Certified Cloud Practitioner' },
                   { stat: '3.60', label: 'Graduate GPA' },

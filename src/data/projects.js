@@ -5,7 +5,7 @@ const projects = [
     icon: 'bi-robot',
     description:
       'Designed, developed, and deployed AI-powered automation workflows for the Bond and Specialty line of business at Travelers, leveraging Amazon Bedrock and multi-agent architectures.',
-    tags: ['AWS Bedrock', 'Python', 'Agent Teams', 'RAG', 'LLM'],
+    tags: ['AWS Bedrock', 'Python', 'Agent Teams', 'LLM'],
   },
   {
     id: 2,

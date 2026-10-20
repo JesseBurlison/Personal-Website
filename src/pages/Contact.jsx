@@ -7,7 +7,7 @@ function Contact() {
         <div className="container py-3">
           <h1 className="fw-bold display-5">Get In Touch</h1>
           <p className="text-white-50 fs-5 mt-3">
-            Whether it's a job opportunity, a project idea, or just a hello — I'd love to hear from you.
+            Whether it's a project idea or just a hello — I'd love to hear from you.
           </p>
         </div>
       </section>
@@ -53,12 +53,6 @@ function Contact() {
               </div>
             </div>
 
-            <div className="col-lg-8 text-center mt-2">
-              <div className="d-flex align-items-center gap-3 justify-content-center text-muted">
-                <i className="bi bi-geo-alt-fill fs-5" style={{ color: 'var(--accent)' }} />
-                <span>Based in Cheshire, CT</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>

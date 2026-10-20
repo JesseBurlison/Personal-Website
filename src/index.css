@@ -10,6 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keeps all real page content in its own stacking context, explicitly
+   above the fixed starfield canvas (avoids negative z-index flicker). */
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #e8eaf0;
@@ -212,4 +219,113 @@ footer .btn-outline-secondary:hover {
 .page-hero {
   background: rgba(0, 0, 0, 0.7) !important;
   backdrop-filter: blur(4px);
+}
+
+/* Game selector cards */
+.game-select-card {
+  cursor: pointer;
+}
+.game-select-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.game-select-card-active {
+  border-color: rgba(30, 144, 255, 0.6) !important;
+  box-shadow: 0 12px 40px rgba(30, 144, 255, 0.22);
+}
+
+/* Tetris */
+.tetris-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tetris-main {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .tetris-main {
+    flex-wrap: wrap;
+  }
+}
+
+.tetris-board-outer {
+  position: relative;
+}
+
+.tetris-board {
+  display: grid;
+  grid-template-columns: repeat(10, clamp(16px, 6vw, 24px));
+  grid-template-rows: repeat(20, clamp(16px, 6vw, 24px));
+  gap: 1px;
+  background: #05070b;
+  border: 2px solid rgba(30, 144, 255, 0.35);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 0 40px rgba(30, 144, 255, 0.12);
+  /* Isolates the board as its own compositing layer so a repaint here
+     never lets the fixed starfield canvas show through mid-frame. */
+  isolation: isolate;
+}
+
+.tetris-cell {
+  width: 100%;
+  height: 100%;
+  background: #12161f;
+  border-radius: 2px;
+}
+
+.tetris-cell[style] {
+  background: var(--cell-color);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.tetris-cell-ghost[style] {
+  background: #12161f;
+  box-shadow: inset 0 0 0 2px var(--cell-color);
+  opacity: 0.7;
+}
+
+.tetris-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.tetris-side {
+  width: 100%;
+  max-width: 200px;
+}
+
+.tetris-touch-controls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 360px;
+}
+.tetris-touch-controls .btn:last-child {
+  grid-column: span 4;
+}
+
+kbd {
+  background: rgba(30, 144, 255, 0.15);
+  border: 1px solid rgba(30, 144, 255, 0.3);
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: #a8c8f0;
 }
